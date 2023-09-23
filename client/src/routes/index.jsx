@@ -1,9 +1,11 @@
 import Home from "../pages/Home";
 import User from "../pages/User";
+import Login from "../pages/Login";
 
-const publicRoute = [
-  { path: "/home", component: Home },
-  { path: "/user", component: User },
+const adminRoute = [
+  { path: "/admin-home", component: Home },
+  { path: "/admin-user", component: User },
+  { path: "/admin-login", component: Login, layout: null },
 ];
 
-export { publicRoute };
+export { adminRoute };

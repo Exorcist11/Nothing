@@ -1,3 +1,4 @@
+import Header from "./Items/Header";
 import Sidebar from "./Items/Sidebar";
 import PropTypes from "prop-types";
 
@@ -8,7 +9,10 @@ export default function AdminLayout({ children }) {
         <Sidebar />
       </div>
 
-      <div>{children}</div>
+      <div className="flex flex-col w-full">
+        <Header />
+        <div className="h-full">{children}</div>
+      </div>
     </div>
   );
 }
