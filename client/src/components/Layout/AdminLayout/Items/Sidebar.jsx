@@ -9,10 +9,10 @@ export default function Sidebar() {
   const location = useLocation();
 
   const menus = [
-    { name: "Home", link: "/home", icon: RiSettings4Line },
+    { name: "Home", link: "/admin-home", icon: RiSettings4Line },
     {
       name: "User",
-      link: "/user",
+      link: "/adminuser",
       icon: IoLogoFreebsdDevil,
       margin: true,
     },

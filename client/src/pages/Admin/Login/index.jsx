@@ -50,8 +50,9 @@ export default function Login() {
     <div className="h-screen flex">
       <div className="flex bg-gradient-to-tr from-blue-300 to-purple-400 w-1/2 justify-around items-center">
         <div className="flex flex-col items-center gap-2">
-          <img src="../../../public/Ouroboros-logo.png" className="w-40 h-40" />
+          <img src="/Ouroboros-logo.png" className="w-40 h-40" />
           <h1 className="font-bold text-4xl">Devil May Cry C.O</h1>
+          <h1 className="uppercase font-medium text-cyan-800">Admin login</h1>
         </div>
       </div>
 
@@ -71,7 +72,7 @@ export default function Login() {
               />
               <BiError
                 size={24}
-                className={`text-red-500 ${err.errEmail ? "" : "hidden"} `}
+                className={`text-red-500 ${err?.errEmail ? "" : "hidden"} `}
               />
             </div>
             {/* <span
@@ -95,7 +96,7 @@ export default function Login() {
               />
               <BiError
                 size={24}
-                className={`text-red-500 ${err.errPass ? "" : "hidden"}`}
+                className={`text-red-500 ${err?.errPass ? "" : "hidden"}`}
               />
             </div>
             {/* <span

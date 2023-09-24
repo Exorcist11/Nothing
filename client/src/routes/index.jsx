@@ -1,6 +1,7 @@
-import Home from "../pages/Home";
-import User from "../pages/User";
-import Login from "../pages/Login";
+import Home from "../pages/Admin/Home";
+import User from "../pages/Admin/User";
+import Login from "../pages/Admin/Login";
+import UserHome from "../pages/Client/UserHome";
 
 const adminRoute = [
   { path: "/admin-home", component: Home },
@@ -8,4 +9,6 @@ const adminRoute = [
   { path: "/admin-login", component: Login, layout: null },
 ];
 
-export { adminRoute };
+const clientRoute = [{ path: "/", component: UserHome }];
+
+export { adminRoute, clientRoute };
