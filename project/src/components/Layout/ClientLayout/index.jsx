@@ -6,7 +6,7 @@ import Footer from "./Items/Footer";
 
 export default function ClientLayout({ children }) {
   return (
-    <div className="px-10 bg-[#e5e7f6] ">
+    <div className="px-10 bg-[#e5e7f6] flex flex-col gap-4">
       <Header />
       <Navbar />
       <Slider />
